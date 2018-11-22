@@ -30,7 +30,7 @@ body {
 }
 .infoIcon-img{
   width:42px;
-  margin-right:-130px
+  margin-left:20px
 }
 
 #header {

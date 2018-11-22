@@ -26,6 +26,7 @@ export default {
 }
 .space-between {
   padding-top: 50px;
+  padding-bottom: 100px;
 }
 .page {
   position: fixed;

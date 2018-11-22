@@ -35,9 +35,13 @@ export default {
 }
 </script>
 <style>
+  @import url('https://fonts.googleapis.com/css?family=Play');
+  body {
+    font-family: 'Play', sans-serif;
+  }
   .info{
     margin: 0 Auto;
-    width: 400px;
+    max-width: 400px;
     font-size: 125%;
   }
 </style>

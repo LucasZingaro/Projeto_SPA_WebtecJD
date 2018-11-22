@@ -4,7 +4,7 @@
       
       <div><router-link to="/options"><img :src="menu_img" class="menu-icon"></router-link></div>
       <div ><router-link to="/"><img :src="home_img" class="menu-icon"></router-link></div>
-      <div ><router-link to="/teste"><img :src="menu_img" class="menu-icon"></router-link><h1></h1></div>
+      <div ><router-link to="/calc"><img :src="calc_img" class="menu-icon" ></router-link><h1></h1></div>
     </div>
   </div>
 </template>
@@ -15,9 +15,8 @@ export default {
   name: 'Menu',
   data () {
     return {
-      contato_img: require('@/../static/icons/contato.png'),
+      calc_img: require('@/../static/icons/calc.png'),
       home_img: require('@/../static/icons/home.png'),
-      info_img: require('@/../static/icons/info.png'),
       menu_img: require('@/../static/icons/menu.png')
     }
   }
@@ -35,6 +34,7 @@ export default {
 
 body {
   font-family: 'Play', sans-serif;
+  text-align:center;
 }
 #menu {
   background-color: rgb(99, 99, 99);

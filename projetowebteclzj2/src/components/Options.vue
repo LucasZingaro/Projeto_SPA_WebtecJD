@@ -13,7 +13,7 @@ export default {
   name: 'Options',
   data () {
     return {
-      msg: 'Página de Opções'
+      msg: 'Página de Opções/Temas'
     }
   },
   methods: {

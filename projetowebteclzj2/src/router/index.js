@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import Info from '@/components/Info'
 import Home from '@/components/Home'
 import Options from '@/components/Options'
-import Teste from '@/components/Teste'
+import Calc from '@/components/Calc'
 
 Vue.use(Router)
 
@@ -25,9 +25,9 @@ export default new Router({
       component: Options
     },
     {
-      path: '/teste',
-      name: 'Teste',
-      component: Teste
+      path: '/calc',
+      name: 'Calc',
+      component: Calc
     }
   ]
 })
