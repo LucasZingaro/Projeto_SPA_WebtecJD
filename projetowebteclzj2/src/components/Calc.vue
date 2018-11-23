@@ -28,6 +28,7 @@
 </template>
 
 <script>
+//autor: github.com/lucaszingaro
 var isSimbolo = false;//ultimo caractere foi simbolo
 var isNumero = false;//ultimo caractere foi numero
 var max= 13;//limite maximo de caracteres(14)
