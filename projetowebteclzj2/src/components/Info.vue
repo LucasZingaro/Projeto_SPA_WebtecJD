@@ -29,7 +29,7 @@ export default {
       projeto: `Webtec Fatec Jundiaí`,
       dataAno: `2º semestre 2018`,
       desc: `Um SPA baseado no projeto modelo disponibilizado durante a Webtec na Fatec Jundiaí.`,
-      func: `Sua função é indefinida ....`
+      func: `Busca pelo conhecimento...`
     }
   }
 }

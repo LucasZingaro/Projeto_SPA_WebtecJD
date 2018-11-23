@@ -1,29 +1,32 @@
 <template>
     <div id="calc">
-        <div id="visor" value="null"></div>
-        <div class="Btn" id="soma" value="+" v-on:click="fsoma">+</div>
-        <div class="Btn" id="sub" value="-" v-on:click="fsub">-</div>
-        <div class="Btn" id="mult" value="*" v-on:click="fmult">x</div>
-        <div class="Btn" id="divi" value="/" v-on:click="fdivi">/</div>
-        <div class="Btn" id="igual" value="=" v-on:click="figual">=</div>
+        <h2>{{tt}}</h2>
+        <div id="calc_run">
+            <div id="visor" value="null"></div>
+            <div class="Btn" id="soma" value="+" v-on:click="fsoma">+</div>
+            <div class="Btn" id="sub" value="-" v-on:click="fsub">-</div>
+            <div class="Btn" id="mult" value="*" v-on:click="fmult">x</div>
+            <div class="Btn" id="divi" value="/" v-on:click="fdivi">/</div>
+            <div class="Btn" id="igual" value="=" v-on:click="figual">=</div>
 
-        <div class="Btn" id="n0" value="0" v-on:click="f0">0</div>
-        <div class="Btn" id="n1" value="1" v-on:click="f1">1</div>
-        <div class="Btn" id="n2" value="2" v-on:click="f2">2</div>
-        <div class="Btn" id="n3" value="3" v-on:click="f3">3</div>
-        <div class="Btn" id="n4" value="4" v-on:click="f4">4</div>
-        <div class="Btn" id="n5" value="5" v-on:click="f5">5</div>
-        <div class="Btn" id="n6" value="6" v-on:click="f6">6</div>
-        <div class="Btn" id="n7" value="7" v-on:click="f7">7</div>
-        <div class="Btn" id="n8" value="8" v-on:click="f8">8</div>
-        <div class="Btn" id="n9" value="9" v-on:click="f9">9</div>
+            <div class="Btn" id="n0" value="0" v-on:click="f0">0</div>
+            <div class="Btn" id="n1" value="1" v-on:click="f1">1</div>
+            <div class="Btn" id="n2" value="2" v-on:click="f2">2</div>
+            <div class="Btn" id="n3" value="3" v-on:click="f3">3</div>
+            <div class="Btn" id="n4" value="4" v-on:click="f4">4</div>
+            <div class="Btn" id="n5" value="5" v-on:click="f5">5</div>
+            <div class="Btn" id="n6" value="6" v-on:click="f6">6</div>
+            <div class="Btn" id="n7" value="7" v-on:click="f7">7</div>
+            <div class="Btn" id="n8" value="8" v-on:click="f8">8</div>
+            <div class="Btn" id="n9" value="9" v-on:click="f9">9</div>
 
-        <div class="Btn" id="apagar" value="a"  v-on:click="fapagar"><--</div>
-        <div class="Btn" id="zerar" value="z" v-on:click="fzerar">CE</div>
-        <div class="Btn" id="reset" value="r" v-on:click="freset">C</div>
-
+            <div class="Btn" id="apagar" value="a"  v-on:click="fapagar"><--</div>
+            <div class="Btn" id="zerar" value="z" v-on:click="fzerar">CE</div>
+            <div class="Btn" id="reset" value="r" v-on:click="freset">C</div>
+        </div>
     </div>
 </template>
+
 <script>
 var isSimbolo = false;//ultimo caractere foi simbolo
 var isNumero = false;//ultimo caractere foi numero
@@ -31,6 +34,11 @@ var max= 13;//limite maximo de caracteres(14)
 var ops=['+','-','x','/'];//opções em caractere;
 export default {
     name: 'Calc',
+    data () {
+        return {
+            tt: 'Calculadora'
+        }
+    },
     methods:{
         //Método(vue) para apagar um caractere
         fapagar: function(event){
@@ -249,11 +257,12 @@ function calculo(nums){
     // 4 colunas e 6 linhas
 </script>
 <style>
-#calc{ 
+#calc_run{ 
     margin: 0 auto;
     background:green;
-    height:auto;
-    min-height:500px;
+    height:100%;
+    min-height:460px;
+
     width: 75%;
     max-width: 400px;
 

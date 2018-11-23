@@ -2,9 +2,11 @@
   <div id="menu">
     <div class="flex-container">
       
-      <div><router-link to="/options"><img :src="menu_img" class="menu-icon"></router-link></div>
+      
       <div ><router-link to="/"><img :src="home_img" class="menu-icon"></router-link></div>
       <div ><router-link to="/calc"><img :src="calc_img" class="menu-icon" ></router-link><h1></h1></div>
+      <div ><router-link to="/cont"><img :src="cont_img" class="menu-icon" ></router-link><h1></h1></div>
+      <div><router-link to="/options"><img :src="menu_img" class="menu-icon"></router-link></div>
     </div>
   </div>
 </template>
@@ -17,7 +19,8 @@ export default {
     return {
       calc_img: require('@/../static/icons/calc.png'),
       home_img: require('@/../static/icons/home.png'),
-      menu_img: require('@/../static/icons/menu.png')
+      menu_img: require('@/../static/icons/menu.png'),
+      cont_img: require('@/../static/icons/cont.png')
     }
   }
 }

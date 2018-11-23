@@ -4,6 +4,7 @@ import Info from '@/components/Info'
 import Home from '@/components/Home'
 import Options from '@/components/Options'
 import Calc from '@/components/Calc'
+import Cont from '@/components/Cont'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/calc',
       name: 'Calc',
       component: Calc
+    },
+    {
+      path: '/cont',
+      name: 'Cont',
+      component: Cont
     }
   ]
 })
